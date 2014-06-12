@@ -1,0 +1,13 @@
+.widgetTitle {
+  border-style: solid;
+  padding: 5px 5px;  
+  border-width: thin;  
+  margin-top: 10px;
+  font-weight: 900;
+}
+.widgetDetails {
+  border-style: solid;
+  padding: 0px 5px;
+  border-width: thin;
+  border-top-style: none;
+}

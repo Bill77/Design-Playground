@@ -1,0 +1,75 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+.menu:before {
+  content: "[";
+}
+.menu:after {
+  content: "]";
+}
+.menu > li {
+  display: inline;
+}
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+.ng-pageslide {
+  background: #eee;
+}
+.sideMenu {
+  padding: 20px;
+}
+.sparklineControl .sparkline {
+  fill: none;
+  stroke: #000;
+  stroke-width: 0.75px;
+}
+.sparklineControl span {
+  display: block;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: bolder;
+  background: lightgrey;
+}
+
+#navIcon {
+  font-size: 1.25em;
+}
+
+.wrapper.slideMenuOpened {
+  left: 300px;  
+}
+
+.wrapper {  
+  left: 0;
+  position: relative;
+  transition: left 0.5s ease;
+  -webkit-transition: left 0.5s ease;
+}
+
+.navbar-collapse.collapse {
+  display: block!important;
+}
+
+.navbar-nav>li, .navbar-nav {
+  float: left !important;
+}
+
+
+.navbar-nav.navbar-right:last-child {
+  margin-right: -15px !important;
+}
+
+.navbar-right {
+  float: right!important;
+}
