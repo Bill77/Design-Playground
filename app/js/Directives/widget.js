@@ -5,9 +5,6 @@ app.directive('widget', function() {
     template: '<div class="widgetTitle">{{widgetTitle}}</div><div class="widgetDetails" ng-transclude></div>',
     scope: {
       widgetTitle: '@'
-    },
-    link: function(scope, attrs) {
-      scope.widgetTitle = attrs.widgetTitle;
-    }    
+    }
   }
 });
