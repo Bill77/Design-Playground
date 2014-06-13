@@ -11,6 +11,7 @@
     "angular-loader": "1.2.x",
     "angular-mocks": "~1.2.x",
     "html5-boilerplate": "~4.3.0",
-    "nvd3": "~1.1.15-beta"
+    "nvd3": "~1.1.15-beta",
+	"bootstrap": "~3.1.1"
   }
 }
