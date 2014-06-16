@@ -77,7 +77,6 @@ body {
   right: -300px;
 }
 
-/*
 .navbar-collapse.collapse {
   display: block!important;
 }
@@ -86,11 +85,23 @@ body {
   float: left !important;
 }
 
-
 .navbar-nav.navbar-right:last-child {
   margin-right: -15px !important;
 }
 
 .navbar-right {
   float: right!important;
-}*/
+}
+
+// Tile Styling work
+.tile {
+  
+}
+
+.tileTitle {
+  
+}
+
+.tileText {
+  
+}
