@@ -93,9 +93,11 @@ body {
   float: right!important;
 }
 
-// Tile Styling work
+/*tile styling*/
+
 .tile {
-  
+  border-style: solid;
+  padding: 2em;
 }
 
 .tileTitle {
