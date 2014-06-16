@@ -1,5 +1,9 @@
 /* app css stylesheet */
 
+body {
+  padding-top: 50px;
+}
+
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
@@ -46,17 +50,34 @@
   font-size: 1.25em;
 }
 
+.wrapper {  
+  left: 0;
+  position: relative;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
 .wrapper.slideMenuOpened {
   left: 300px;  
 }
 
-.wrapper {  
-  left: 0;
-  position: relative;
-  transition: left 0.5s ease;
-  -webkit-transition: left 0.5s ease;
+.navbar {
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; 
 }
 
+.navbar.slideMenuOpened {
+  left: 300px;
+  right: -300px;
+}
+
+/*
 .navbar-collapse.collapse {
   display: block!important;
 }
@@ -72,4 +93,4 @@
 
 .navbar-right {
   float: right!important;
-}
+}*/
