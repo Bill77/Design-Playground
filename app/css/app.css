@@ -46,8 +46,9 @@ body {
   background: lightgrey;
 }
 
-#navIcon {
+.navIcon {
   font-size: 1.25em;
+  font-weight: 700;
 }
 
 .wrapper {  
