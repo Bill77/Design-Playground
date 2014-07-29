@@ -38,6 +38,7 @@ app.directive('sparkline', [function () {
       // setup height of the control
       sparklineCtrl.style('height', height)
       .style('line-height', height);
+      svg.style('height', height);
             
       // Browser onresize event
       window.onresize = function() {

@@ -1,0 +1,28 @@
+<div id="patientBarGroup">
+  <div id="patientBar">
+    <div id="patientBarImageGroup">
+      <img id="patientBarImage" ng-src="{{PatientBar.patientPhoto}}" alt="No Photo" />
+      <span id="patientBarImageGenderIcon" class="fa fa-female"></span>
+    </div>
+    <div id="patientBarInfo">
+      <h4>{{PatientBar.fullName}}</h4>
+      <div id="patientBarInfoGroup">      
+        <div id="patientBarInfoGeneral">
+          <b>MRN</b> {{PatientBar.displayId}}<br/>
+          {{PatientBar.dateOfBirth}} ({{PatientBar.age}})
+        </div>
+        <div id="patientBarInfoDiagnosis">
+          {{PatientBar.diagnosis}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="patientBarButtons">
+<!--
+    <div class="col-sm-6 btn btn-default indicatorButtons">Allergy</div>
+    <div class="col-sm-6 btn btn-default indicatorButtons">Alert</div>
+    <div class="col-sm-6 btn btn-default indicatorButtons">Notification</div>
+    <div class="col-sm-6 btn btn-default indicatorButtons">Contact</div>
+-->
+  </div>
+</div>

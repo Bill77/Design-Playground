@@ -1,0 +1,57 @@
+#patientBarGroup {
+  padding: 10px;
+}
+
+#patientBar {
+  width: 65%;  
+  border: 1px solid #000000;  
+}
+
+#patientBarImageGroup {
+  
+  position: relative;
+  width: 100px;
+  height: 100px;  
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#patientBarImage {
+  width: 100px;
+  position: absolute;
+  z-index: 1;
+}
+
+#patientBarImageGenderIcon {
+  position: absolute;
+  z-index: 2;
+  top: 5px;
+  left: 85px;
+}
+
+#patientBarInfo {
+  display: inline-block;  
+  vertical-align: top;  
+}
+
+#patientBarInfoGeneral {     
+  display: table-cell;
+}
+
+#patientBarInfoDiagnosis {    
+  border-left: 3px dotted #000000;
+  padding-left: 4px;
+  margin-left: 5px;
+  display: table-cell;    
+}
+
+#patientBarButtons {
+  width: 29%;
+  display: inline-block;
+}
+#patientBarInfoGroup {
+  display: table;  
+  border-spacing: 5px;
+  border-collapse: separate; 
+}

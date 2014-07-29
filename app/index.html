@@ -19,16 +19,16 @@
   <link rel="stylesheet" href="css/font-awesome-4.1.0/css/font-awesome.css">
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/widget.css">
+  <link rel="stylesheet" href="css/patientBar.css">
+  <link rel="stylesheet" href="css/date-polyfill.css">
   <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 
-<body>
+<body ng-controller="sideMenu" class="wrapper" ng-class="{slideMenuOpened: menuOpened}">
   <!--[if lt IE 7]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-  <div ng-controller="sideMenu" class="wrapper" ng-class="{slideMenuOpened: menuOpened}">
-
-    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" ng-class="{slideMenuOpened: menuOpened}">
+      <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" ng-class="{slideMenuOpened: menuOpened}">
       <div class="container-fluid">
         <ul class="nav navbar-nav">
           <li>
@@ -47,18 +47,18 @@
           <li>
             <form class="navbar-form">
               <input type="search" class="form-control " placeholder="Search Patients" name="searchTerm" id="patientSearch" ng-model="searchValue" ui-autocomplete="autoCompleteOptions">
-              <button class="btn btn-primary" type="submit">
+              <button class="btn" type="submit">
                 <span class="glyphicon glyphicon-search"></span>
               </button>
             </form>
           </li>
-          <li>
-            <a href='' class="dropdown-toggle" data-toggle="dropdown" target="_self">User, Name
-              <b class="caret"></b>
+          <li class="dropdown">
+            <a href class="dropdown-toggle">
+              User, Name <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
               <li>
-                <a href='' target="_self">Logoff</a>
+                <a href>Logoff</a>
               </li>
             </ul>
           </li>
@@ -77,15 +77,14 @@
 
     <div>Angular seed app: v
       <span app-version></span>
-    </div>
-  </div>
+    </div>  
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="bower_components/jquery/dist/jquery.js"></script>
-  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
   <script src="bower_components/d3/d3.js"></script>
   <script src="bower_components/angular-ya-treeview/dist/ya-treeview-0.2.0.js"></script>
 
@@ -95,11 +94,13 @@
   <script src="js/services/services.js"></script>
   <script src="js/Services/patientListSvc.js"></script>
   <script src="js/Controllers/controllers.js"></script>
+  <script src="js/Controllers/patientBarCtrl.js"></script>
   <script src="js/Controllers/sideMenu.js"></script>
   <script src="js/Controllers/patientListCtrl.js"></script>
   <script src="js/Filters/filters.js"></script>
   <script src="js/Directives/directives.js"></script>
-  <script src="js/Directives/widget.js"></script>  
+  <script src="js/Directives/widget.js"></script>
+  <script src="js/Directives/date-polyfill.js"></script>
 </body>
 
 </html>
