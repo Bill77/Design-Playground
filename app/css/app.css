@@ -100,3 +100,90 @@ body {
 .tileText {
   
 }
+
+#patientBarGroup {
+  height: 1500px;  
+}
+
+#patientBarInfo {
+  width: 80%;
+}
+
+#patientBarInfoGeneral {
+  width: 150px;
+}
+
+#searchBar {
+  font-family: "Calibri Light";
+  font-size: 14px;
+  color: #fff;  
+  background-color: #626262;
+  margin-top:10px;   
+  border-radius: 2px;
+  width: 250px;
+  height: 31px;
+  border: none;
+  padding: 0px 31px 0px 8px
+}
+
+#searchBar:focus {
+  outline-color: #009fda;
+}
+
+#searchBar::-webkit-input-placeholder{
+  color: #c6c6c6;
+}
+
+#searchButton {
+  background-color: #626262;
+  color: #fff;
+  border-color: #626262;
+  height: 28px;
+  border: none;
+  border-radius: 2px;
+  width: 31px;
+  position: relative;
+  left: -36px;
+  top: 2px;
+}
+
+#searchButton:focus {
+  outline: none;
+}
+
+#calendar td {
+  width: 20px;
+  text-align: center;
+  border: solid 1px;
+  position: relative;
+}
+
+.partialTreatment {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 0;
+  border-color: transparent #007bff transparent transparent;
+  position: absolute;  
+  right: 0;
+}
+
+.labDateRangeText {
+    width: 90%;
+    border: 1px solid black;
+    float: left;        
+}
+
+#rightContainer .icon {
+    display: block;
+    margin: auto;
+}
+
+.icon {
+    width:18px;
+    height:18px;
+}
+
+.nowrap {
+    white-space: nowrap;
+}

@@ -1,0 +1,7 @@
+{
+    "jscodehints.detectedExclusions": [
+        "C:/Elekta/Design-Playground/app/bower_components/jquery/src/outro.js",
+        "C:/Elekta/Design-Playground/app/js/Controllers/calendarCtrl.js",
+        "C:/Elekta/Design-Playground/app/bower_components/bootstrap/grunt/bs-raw-files-generator.js"
+    ]
+}

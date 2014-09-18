@@ -32,7 +32,7 @@
       <div class="container-fluid">
         <ul class="nav navbar-nav">
           <li>
-            <a href="" target="_self" ng-click="setMenuOpened(true)" ng-hide="menuOpened" id="navIconOpen">
+            <a href="" target="_self" ng-click="toggleMenu()" id="navIconOpen">
               <i class="fa fa-bars navIcon"></i>
             </a>
           </li>
@@ -42,12 +42,11 @@
             </p>
           </li>          
         </ul>
-
         <ul class="nav navbar-nav navbar-right">
-          <li>
-            <form class="navbar-form">
-              <input type="search" class="form-control " placeholder="Search Patients" name="searchTerm" id="patientSearch" ng-model="searchValue" ui-autocomplete="autoCompleteOptions">
-              <button class="btn" type="submit">
+          <li>            
+            <form>
+              <input id="searchBar" type="search" placeholder="search Info">
+              <button id="searchButton" type="submit">
                 <span class="glyphicon glyphicon-search"></span>
               </button>
             </form>
@@ -96,7 +95,7 @@
   <script src="js/Controllers/controllers.js"></script>
   <script src="js/Controllers/patientBarCtrl.js"></script>
   <script src="js/Controllers/sideMenu.js"></script>
-  <script src="js/Controllers/patientListCtrl.js"></script>
+  <script src="js/Controllers/calendarCtrl.js"></script>
   <script src="js/Filters/filters.js"></script>
   <script src="js/Directives/directives.js"></script>
   <script src="js/Directives/widget.js"></script>

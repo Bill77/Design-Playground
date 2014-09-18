@@ -1,0 +1,28 @@
+<div id="calendar">
+  <table>
+    <tr>
+      <th></th>
+      <td colspan=2 >July</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan=3>August</td>
+    </tr>
+    <tr>
+      <th>Date</th>
+        <td ng-repeat="value in calendar.data">{{value.date}}</td>
+    </tr>
+    <tr>
+      <th>FX</th>      
+      <td ng-repeat="value in calendar.data">        
+        <div ng-if="value.partial" class="partialTreatment"></div>
+        {{value.treatment}}
+      </td>
+      </div>
+    </tr>
+  </table>
+</div>
